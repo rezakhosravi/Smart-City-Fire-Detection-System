@@ -61,65 +61,7 @@ void loop()
     float c6;
     float c7;
 
-/*
-//    c0 = gas.measure_NH3();
-//    Serial.print("The concentration of NH3 is ");
-    if(c>=0) Serial.print(c);
-    else Serial.print("invalid");
-//    Serial.println(" ppm");
-    
-    c1 = gas.measure_CO();
-//    Serial.print("The concentration of CO is ");
-    Serial.print(",");
-    if(c>=0) Serial.print(c);
-    
-    else Serial.print("invalid");
-//    Serial.println(" ppm");
 
-    c2 = gas.measure_NO2();
-//    Serial.print("The concentration of NO2 is ");
-    Serial.print(",");
-    if(c>=0) Serial.print(c);
-    else Serial.print("invalid");
-//    Serial.println(" ppm");
-
-    c3 = gas.measure_C3H8();
-//    Serial.print("The concentration of C3H8 is ");
-    Serial.print(",");
-    if(c>=0) Serial.print(c);
-    else Serial.print("invalid");
-//    Serial.println(" ppm");
-
-    c4 = gas.measure_C4H10();
-//    Serial.print("The concentration of C4H10 is ");
-    Serial.print(",");
-    if(c>=0) Serial.print(c);
-    else Serial.print("invalid");
-//    Serial.println(" ppm");
-
-    c5 = gas.measure_CH4();
-//    Serial.print("The concentration of CH4 is ");
-    Serial.print(",");
-    if(c>=0) Serial.print(c);
-    else Serial.print("invalid");
- //   Serial.println(" ppm");
-
-    c6 = gas.measure_H2();
- //   Serial.print("The concentration of H2 is ");
-    Serial.print(",");
-    if(c>=0) Serial.print(c);
-    else Serial.print("invalid");
- //   Serial.println(" ppm");
-
-    c7 = gas.measure_C2H5OH();
-//    Serial.print("The concentration of C2H5OH is ");
-    Serial.print(",");
-    if(c>=0) Serial.println(c);
-    else Serial.print("invalid");
-//    Serial.println(" ppm");
-
-//    delay(1000);
-*/
 if (millis() - lastSendTime > interval) {
     c0 = gas.measure_NH3();
     c1 = gas.measure_CO();
